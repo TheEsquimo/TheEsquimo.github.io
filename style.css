@@ -3,13 +3,13 @@
     color: white;
     margin: 0;
     padding: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: "Arial Black";
 }
 
 header {
     display: block;
-    background-image:url('sky-space-milky-way-stars-110854.jpg');
+    background-image: url('headerImage.jpg');
     background-color: black;
     color: white;
     overflow: hidden;
@@ -28,15 +28,14 @@ article {
     display: flex;
     align-items: center;
     margin: auto;
-    border: 0.5em solid #177E89;
+    border: 0.5em dashed #177E89;
     padding: 2em;
-    background-image: linear-gradient(#080633, black, #080633)
+    background-image: linear-gradient(#080633, black, #080633);
 }
 
-article img {
-    height: 30%;
-    width: 30%;
-    float: left;
+#introduction-image {
+    height: 40%;
+    width: 40%;
 }
 
 article p {
@@ -49,15 +48,17 @@ article p {
 
 .features {
     display: table;
+    background-image: url('spaceImage.jpg');
     clear: both;
     margin: 0 auto;
-    padding: 2em 0 2em 0;
+    padding: 4em;
 }
 
 .developer-quote {
     display: block;
     background-image: linear-gradient(black, #084C61, black);
     margin: 0;
+    padding: 5em;
 }
 
 .developer-quote h2 {
@@ -69,22 +70,53 @@ article p {
 }
 
 footer {
+    background-image: url('spaceImage.jpg');
+}
+
+.credits {
     display: table;
     margin: 0 auto;
-    padding: 2em 0 2em 0;
+    padding: 1em 0 1em 0;
 }
 
 li::before {
     content: "\2022";
-    color: #084C61;
+    color: #177E89;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
 
-
 li {
     list-style-type: none;
     font-size: 1.5em;
+}
+
+@media only screen and (max-width: 767px) {
+    body{
+
+    }
+
+    header {
+        padding: 2em;
+    }
+
+    article {
+        display: block;
+        align-content: center;
+    }
+
+    #introduction-image {
+        display: flex;
+        align-content: center;
+        margin: 0 auto;
+        padding: 2em 0 2em 0;
+        height: 60%;
+        width: 60%;
+    }
+
+    .credits {
+        padding: 1em;
+    }
 }

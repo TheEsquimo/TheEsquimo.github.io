@@ -1,27 +1,62 @@
-﻿header {
-    background-image: sky-space-milky-way-stars-110854;
+﻿body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image:url('sky-space-milky-way-stars-110854.jpg');
+    background-color: black;
     color: white;
     overflow: hidden;
-    padding: 20px 10px;
+    padding: 6em 5em;
     text-align: center;
     display: block;
 }
 
-body {
-    background-color: black;
-    color: white;
-}
-
-.introduction {
+section {
+    display: block;
+    padding-top: 1em;
     text-align: center;
+    background-image: linear-gradient(#080633, black);
 }
 
-.introduction img {
+article {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    border: 1em solid #EEC643;
+    padding: 2em;
+}
+
+article img {
+    height: 30%;
+    width: 30%;
     float: left;
-    display: inline;
 }
 
-.introduction p {
-    float: right;
-    display: inline;
+article p {
+    padding-left: 15em;
+}
+
+.features {
+    display: table;
+    clear: both;
+    margin: 0 auto;
+}
+
+.developer-quote {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(black, #084C61);
+}
+
+.developer-quote h2 {
+    text-align: left;
+}
+
+.developer-quote p {
+    text-align: right;
 }

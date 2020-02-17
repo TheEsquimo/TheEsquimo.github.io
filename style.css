@@ -3,32 +3,34 @@
     color: white;
     margin: 0;
     padding: 0;
+    font-size: 1.2em;
+    font-family: "Arial Black";
 }
 
 header {
+    display: block;
     background-image:url('sky-space-milky-way-stars-110854.jpg');
     background-color: black;
     color: white;
     overflow: hidden;
     padding: 6em 5em;
     text-align: center;
-    display: block;
 }
 
 section {
     display: block;
-    padding-top: 1em;
+    padding: 0.1em;
     text-align: center;
-    background-image: linear-gradient(#080633, black);
+    background-image: linear-gradient(#080633, black, #080633);
 }
 
 article {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 40%;
-    border: 1em solid #EEC643;
+    border: 0.5em solid #177E89;
     padding: 2em;
+    background-image: linear-gradient(#080633, black, #080633)
 }
 
 article img {
@@ -38,25 +40,51 @@ article img {
 }
 
 article p {
-    padding-left: 15em;
+    padding-left: 35px;
+}
+
+.features::before {
+    background-image: linear-gradient(black, #084C61, #084C61, #084C61, black);
 }
 
 .features {
     display: table;
     clear: both;
     margin: 0 auto;
+    padding: 2em 0 2em 0;
 }
 
 .developer-quote {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(black, #084C61);
+    display: block;
+    background-image: linear-gradient(black, #084C61, black);
+    margin: 0;
 }
 
 .developer-quote h2 {
-    text-align: left;
+    margin: 0;
 }
 
 .developer-quote p {
-    text-align: right;
+    margin: 10px;
+}
+
+footer {
+    display: table;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+}
+
+li::before {
+    content: "\2022";
+    color: #084C61;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+li {
+    list-style-type: none;
+    font-size: 1.5em;
 }

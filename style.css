@@ -1,0 +1,27 @@
+﻿header {
+    background-color: #3F3C54;
+    color: white;
+    overflow: hidden;
+    padding: 20px 10px;
+    text-align: center;
+    display: block;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.introduction img {
+    float: left;
+    display: inline;
+}
+
+.introduction p {
+    float: right;
+    display: inline;
+}

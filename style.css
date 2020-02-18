@@ -7,14 +7,25 @@
     font-family: "Arial Black";
 }
 
+#alien-planet-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
 header {
     display: block;
-    background-image: url('headerImage.jpg');
+    position: relative;
+    background-image: url('images/headerImage.jpg');
     background-color: black;
     color: white;
     overflow: hidden;
     padding: 6em 5em;
     text-align: center;
+    z-index: 1;
 }
 
 section {
@@ -48,10 +59,17 @@ article p {
 
 .features {
     display: table;
-    background-image: url('spaceImage.jpg');
+    background-image: url('images/spaceImage.jpg');
     clear: both;
     margin: 0 auto;
     padding: 4em;
+}
+
+#octopus-image {
+    float: right;
+    transform: scaleX(-1);
+    height: 20%;
+    width: 20%;
 }
 
 .developer-quote {
@@ -70,7 +88,15 @@ article p {
 }
 
 footer {
-    background-image: url('spaceImage.jpg');
+    background-image: url('images/spaceImage.jpg');
+}
+
+#space-car-image {
+    display: inline;
+    float: left;
+    padding-left: 5em;
+    height: 20%;
+    width: 20%;
 }
 
 .credits {
@@ -117,6 +143,16 @@ li {
         padding: 2em 0 2em 0;
         height: 60%;
         width: 60%;
+    }
+
+    #octopus-image, #space-car-image {
+        float: none;
+        display: flex;
+        align-content: center;
+        margin: 0 auto;
+        width: 40%;
+        height: 40%;
+        padding: 0;
     }
 
     .credits {
